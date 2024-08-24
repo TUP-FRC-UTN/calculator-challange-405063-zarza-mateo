@@ -1,0 +1,40 @@
+<div class="container" >
+    <div class="form">
+      <div class="row numeros">
+
+        <div class="col-auto">
+            <label class="label" for="">Ingrese numero 1</label>
+          <input class="input" type="number" [(ngModel)]="num1" />
+        </div>
+
+        <div class="col-auto">
+            <label class="label" for="">Ingrese numero 2</label>
+          <input class="input" type="number" [(ngModel)]="num2"/>
+        </div>
+
+      
+      </div>
+      <div class="row">
+        <div class="col-auto">
+          <button class="btn" (click)="suma()">+</button>
+          <button class="btn" (click)="resta()">-</button>
+          <button class="btn" (click)="potencia()">^</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-auto">
+          <button class="btn" (click)="multiplicacion()">*</button>
+          <button class="btn" (click)="division()">%</button>
+          <button class="btn" (click)="raiz()">√</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-auto">
+          <button class="btn" style="width: 180px;" (click)="borrar()">CE</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
